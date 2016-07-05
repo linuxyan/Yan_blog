@@ -33,4 +33,4 @@ def content(id):
     return render_template('content.html',title=title,data=data)
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0')
+    app.run()
