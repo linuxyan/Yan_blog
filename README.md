@@ -12,11 +12,11 @@ mdmanager.py usage:
 
 -i,--id:指定文章ID号(可选).
 
--t,--title:指定文章标题.如:--title="测试标题"
+-t,--title:指定文章标题.如:<code>--title="测试标题"</code>
 
--g,--tags:指定文章标签.以空格分割.如:--tags="python markdown"
+-g,--tags:指定文章标签.以空格分割.如:<code>--tags="python markdown"</code>
 
--f,--file:指定文章MD文件路径,路径需要加默认前缀: "markdown/".如:--file="markdown/helloword.md"
+-f,--file:指定文章MD文件路径,路径需要加默认前缀: "markdown/".如:<code>--file="markdown/helloword.md"</code>
 
 如果指定id号,如果此ID有内容,则为更新此ID的内容,如果此ID没有内容,则为指定ID新加内容!
 
