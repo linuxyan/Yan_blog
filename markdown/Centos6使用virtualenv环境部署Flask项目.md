@@ -34,7 +34,7 @@ make install
 ```
 `zlib-devel  openssl-devel`这两个包一定要`安装之后`再编译python，要不创建虚拟环境的时候，会报:  
 `ImportError: No module named  zlib`  
-`ImportError: No module named `  
+`ImportError: No module named HTTPSHandle`  
 
 ####创建python虚拟环境ENV
 ```python
