@@ -23,7 +23,7 @@ easy_install virtualenv
 >使用`virtualenv`创建指定版本的python虚拟环境的前提是本机上要安装了`该版本的python`。这里我要使用python2.7.10版本的python，`必须`要先在机器上安装python2.7.10.
 
 在centos6安装python2.7.10
-```shell
+```python
 yum install zlib-devel openssl-devel
 wget https://www.python.org/ftp/python/2.7.10/Python-2.7.10.tgz
 tar zxvf Python-2.7.10.tgz 
@@ -31,9 +31,9 @@ tar zxvf Python-2.7.10.tgz
 make 
 make install
 ```
-><code>zlib-devel  openssl-devel</code>这两个包一定要<code>安装之后</code>再编译python，要不创建虚拟环境的时候，会报：
-><code>ImportError: No module named  zlib</code>
-><code>ImportError: No module named <code>
+>`zlib-devel  openssl-devel`这两个包一定要`安装之后`再编译python，要不创建虚拟环境的时候，会报：
+>`ImportError: No module named  zlib`
+>`ImportError: No module named `
 
 ####创建python虚拟环境ENV
 ```python
