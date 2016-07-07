@@ -40,19 +40,19 @@ make install
 ```python
 virtualenv ENV
 ```
-创建一个虚拟环境ENV，会产生一个`ENV`目录，该目录就是一个虚拟的python环境。
-创建的虚拟环境默认会安装`pip`和`easy_install`
-**`lib`** 所有安装的python库都会放在这个目录中的lib/pythonx.x/site-packages/下
-**`bin`** 是在当前环境是使用的python解释器
+创建一个虚拟环境ENV，会产生一个`ENV`目录，该目录就是一个虚拟的python环境。  
+创建的虚拟环境默认会安装`pip`和`easy_install`  
+**`lib`** 所有安装的python库都会放在这个目录中的lib/pythonx.x/site-packages/下  
+**`bin`** 是在当前环境是使用的python解释器  
 
 ####附加参数
 ```python
 virtualenv --system-site-packages ENV
 virtualenv --no-site-packages ENV
 ```
-参数`--system-site-packages`会继承/usr/lib/python2.7/site-packages下的所有库.
-参数`--no-site-packages`不会把已经安装到系统Python环境中的所有第三方包复制过来,这样我们就创建了一个不带任何第三方包的`干净`的Python运行环境。
-最新版本virtualenv会把访问全局site-packages作为`默认`行为.
+参数`--system-site-packages`会继承/usr/lib/python2.7/site-packages下的所有库.  
+参数`--no-site-packages`不会把已经安装到系统Python环境中的所有第三方包复制过来,这样我们就创建了一个不带任何第三方包的`干净`的Python运行环境。  
+最新版本virtualenv会把访问全局site-packages作为`默认`行为.  
 
 ####创建指定python版本的虚拟环境
 ```python
@@ -102,20 +102,20 @@ module = Yan_blog
 callable = app
 daemonize = /var/log/Yan_blog.log
 ```
-**`master`**  启动主进程.
-**`vhost`** 开启虚拟主机模式.
-**`workers`** 开启几个工作进程.
-**`reload-mercy`** 平滑重启等待最大时间.超出此时间还没处理完的请求会被强行结束.
-**`vacuum`** 当服务器退出的时候自动删除unix socket文件和pid文件.
-**`max-requests`** 为每个工作进程设置请求数的上限,上述配置设置工作进程每处理1000个请求就会被回收重用。
-**`limit-as`** 限制每个uWSGI进程的虚拟内存使用数。如果超出,则会使程序报内存错误.
-**`chmod-socket`** 设置socket文件的权限.
-**`socket`** 指定uwsgi的客户端将要连接的socket的路径,也可以设置为端口.
-**` venv`**   为python程序设置指定的虚拟环境，就是我们刚才创建的ENV.
-**`chdir `** 在失去权限前，使用chdir()到指定目录(就是项目的目录)。
-**`module`** 加载指定的python WSGI模块(项目的启动文件).
-**`callable`** 设置在收到请求时，哪个变量将被调用，(`app = Flask(__name__`) 就是这里的app。
-**`daemonize`**  使进程在后台运行，并将日志打到指定的日志文件或者udp服务器.
+**`master`**  启动主进程.  
+**`vhost`** 开启虚拟主机模式.  
+**`workers`** 开启几个工作进程.  
+**`reload-mercy`** 平滑重启等待最大时间.超出此时间还没处理完的请求会被强行结束.  
+**`vacuum`** 当服务器退出的时候自动删除unix socket文件和pid文件.  
+**`max-requests`** 为每个工作进程设置请求数的上限,上述配置设置工作进程每处理1000个请求就会被回收重用。  
+**`limit-as`** 限制每个uWSGI进程的虚拟内存使用数。如果超出,则会使程序报内存错误.  
+**`chmod-socket`** 设置socket文件的权限.  
+**`socket`** 指定uwsgi的客户端将要连接的socket的路径,也可以设置为端口.  
+**` venv`**   为python程序设置指定的虚拟环境，就是我们刚才创建的ENV.  
+**`chdir `** 在失去权限前，使用chdir()到指定目录(就是项目的目录)。  
+**`module`** 加载指定的python WSGI模块(项目的启动文件).  
+**`callable`** 设置在收到请求时，哪个变量将被调用，(`app = Flask(__name__`) 就是这里的app。  
+**`daemonize`**  使进程在后台运行，并将日志打到指定的日志文件或者udp服务器.  
 
 ####用uwsgi启动flask项目
 ```python
