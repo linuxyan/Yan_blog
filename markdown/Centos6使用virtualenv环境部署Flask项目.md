@@ -1,4 +1,4 @@
-#Centos6使用 virtualenv环境部署Flask项目
+#Centos6使用virtualenv环境部署Flask项目
 
 -------------------
 >前言：由于之前是在mac上开发了一个项目，用到的python版本是2.7.10 。部署到生产环境的时候，Centos6系列自带的python版本只有python2.6.结果项目跑不起来，于是使用virtualenv来创建一个python2.7.10的虚拟环境。
@@ -32,9 +32,9 @@ tar zxvf Python-2.7.10.tgz
 make 
 make install
 ```
-`zlib-devel  openssl-devel`这两个包一定要`安装之后`再编译python，要不创建虚拟环境的时候，会报：</br>
-`ImportError: No module named  zlib`
-`ImportError: No module named `
+`zlib-devel  openssl-devel`这两个包一定要`安装之后`再编译python，要不创建虚拟环境的时候，会报:  
+`ImportError: No module named  zlib`  
+`ImportError: No module named `  
 
 ####创建python虚拟环境ENV
 ```python
