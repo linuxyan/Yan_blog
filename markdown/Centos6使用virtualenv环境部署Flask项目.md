@@ -50,7 +50,7 @@ virtualenv ENV
 virtualenv --system-site-packages ENV
 virtualenv --no-site-packages ENV
 ```
-参数`--system-site-packages`会继承/usr/lib/python2.7/site-packages下的所有库.  
+参数`--system-site-packages`会继承/usr/lib/python2.x/site-packages下的所有库.  
 参数`--no-site-packages`不会把已经安装到系统Python环境中的所有第三方包复制过来,这样我们就创建了一个不带任何第三方包的`干净`的Python运行环境。  
 最新版本virtualenv会把访问全局site-packages作为`默认`行为.  
 
