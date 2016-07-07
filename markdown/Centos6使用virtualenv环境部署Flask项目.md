@@ -39,7 +39,7 @@ make install
 ```python
 virtualenv ENV
 ```
->创建一个虚拟环境ENV，会产生一个<code>ENV</code>目录，该目录就是一个虚拟的python环境。
+>创建一个虚拟环境ENV，会产生一个`ENV`目录，该目录就是一个虚拟的python环境。
 >创建的虚拟环境默认会安装`pip`和`easy_install`
 >**`lib`** 所有安装的python库都会放在这个目录中的lib/pythonx.x/site-packages/下
 >**`bin`** 是在当前环境是使用的python解释器
