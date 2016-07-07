@@ -23,7 +23,7 @@ easy_install virtualenv
 >使用<code>virtualenv</code>创建指定版本的python虚拟环境的前提是本机上要安装了<code>该版本的python</code>。这里我要使用python2.7.10版本的python，<code>必须</code>要先在机器上安装python2.7.10.
 
 在centos6安装python2.7.10
-```python
+```shell
 yum install zlib-devel openssl-devel
 wget https://www.python.org/ftp/python/2.7.10/Python-2.7.10.tgz
 tar zxvf Python-2.7.10.tgz 
